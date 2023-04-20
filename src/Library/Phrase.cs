@@ -3,7 +3,7 @@
 // Copyright (c) Programación II. Derechos reservados.
 // </copyright>
 //-------------------------------------------------------------------------
-using System.Collections;
+    using System.Collections;
 using System.Text;
 
 namespace WordsPhrases
@@ -52,7 +52,10 @@ namespace WordsPhrases
 
             foreach (Word word in this.words)
             {
-                phrase.Append(" ");
+                if (phrase.Length > 0)
+                {
+                    phrase.Append(" ");
+                }
                 phrase.Append(word.Text);
             }
 
